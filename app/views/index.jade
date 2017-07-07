@@ -1,0 +1,35 @@
+html
+	head
+		title=title
+		link(href='/css/main.css',rel='stylesheet')
+	body
+		h1(id=50)=title
+		if isLoggedIn
+			h3 You are logged in. 
+				=email
+			form(name='logout',method='POST',action='logout')
+				div
+					input(type='submit',value='Logout')
+		else
+			h3 Login
+			form(name='login',method='POST',action='login')
+				div
+					label(for='email') Email :
+					input(type='email',name='email')
+					label(for='password') Password :
+					input(type='password',name='password')
+					label(for='youtube')  Youtube URL :
+					input(type="text",name="youtube_url")
+				div
+					input(type='checkbox',value='remember',name='remember')
+					| Remember me
+					input(type='checkbox',value='1',name='autoplay')
+					| AutoPlay
+				div
+					input(type='submit',value='login')
+		img(src='http://garthdb.com/img/jade_branding/jade-01.svg',alt='Logo',width=320,high=240)
+		if isLoggedIn&&youtube.trim().length>0
+			iframe(width='640',height='300',src=youtube)
+			br
+		if imSession!='undefined'||imSession!=null
+			=imSession

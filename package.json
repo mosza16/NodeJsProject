@@ -1,0 +1,14 @@
+{
+  "name": "MyProject",
+  "version": "1.0.0",
+  "dependencies": {
+    "connect-redis": "^3.1.0",
+    "cookie-session": "^2.0.0-alpha.1",
+    "express": "^4.14.0",
+    "express-session": "^1.14.1",
+    "express-validator": "^2.21.0",
+    "jade": "^1.11.0",
+    "mongoose": "^4.6.5",
+    "node-sass-middleware": "^0.9.8"
+  }
+}

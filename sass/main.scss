@@ -1,0 +1,14 @@
+$maincolor :#3104B5;
+h1{
+	color:$maincolor;
+
+}
+h2{
+	color: $maincolor;
+}
+h3{
+	color: $maincolor;
+	h1{
+		color:red;
+	}
+}

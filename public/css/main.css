@@ -1,0 +1,15 @@
+h1 {
+  color: #3104B5;
+}
+
+h2 {
+  color: #3104B5;
+}
+
+h3 {
+  color: #3104B5;
+}
+
+h3 h1 {
+  color: red;
+}
