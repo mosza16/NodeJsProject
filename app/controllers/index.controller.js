@@ -8,7 +8,7 @@ exports.render = function(req,res){
 
 	}
 	res.render('index',{
-		'title':'Kuy rai m ai sus',
+		'title':'hi son',
 		'message':'how are things',
 		isLoggedIn : isLoggedIn,
 		email : email,
